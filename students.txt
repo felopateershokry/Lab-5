@@ -1,0 +1,5 @@
+9278,s7s ssp,20,female,fef,2.3
+9276,na2eb,20,male,CCE,3.98
+123,Salama,20,Male,dep,3.4
+145,Ayman,63,Female,CSE,0.4
+151,Ali,43,Female,FUS,0.01
