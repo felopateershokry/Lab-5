@@ -4,6 +4,7 @@
  */
 package lab5;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -18,14 +19,11 @@ public class Lab5 {
      public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // Create dependencies
         StudentDatabase sdb = new StudentDatabase("students.txt");
         AuthenticationManager auth = new AuthenticationManager();
 
-        // Create Admin object (composition)
         AdminRole admin = new AdminRole(auth, sdb);
 
-        // ---- LOGIN TEST ----
         System.out.print("Enter username: ");
         String username = input.nextLine();
 
@@ -34,14 +32,22 @@ public class Lab5 {
 
         boolean loggedIn = admin.login(username, password, "users.txt");
 
-        // ---- Post-login test ----
         if (loggedIn) {
-            System.out.println("✅ Admin access granted!");
-            // You can test more features here later, like:
-            // admin.addStudent();
-            // admin.viewStudents();
+            System.out.println("Admin access granted!");
+            
+             admin.addStudent(1, "Mariam Ali", 20, "F", "CS", (float) 3.8);
+            admin.addStudent(2, "Omar Hassan", 21, "M", "IT", (float) 3.4);
+
+            ArrayList<Student> all = admin.viewStudents();
+            for (Student s : all) {
+                System.out.println(s.lineRepresentation());
+            }
+
+            admin.updateStudent(1, 21,"cce", (float) 3.9);
+            admin.deleteStudent(2);
+            
         } else {
-            System.out.println("❌ Access denied.");
+            System.out.println("Access denied.");
         }
 
         input.close();
