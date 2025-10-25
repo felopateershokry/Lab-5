@@ -15,8 +15,6 @@ public class UpdateStudent extends javax.swing.JFrame {
      */
     public UpdateStudent() {
         initComponents();
-        setTitle("Update Students Page");
-
     }
 
     /**
