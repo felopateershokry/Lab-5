@@ -265,14 +265,14 @@ public class AddStudent extends javax.swing.JFrame {
 //            sdb.readFromFile();
 //            sdb.addRecord(s1);
 //            sdb.saveToFile();
-            StudentDatabase sdb = new StudentDatabase("students.txt");
+//            StudentDatabase sdb = new StudentDatabase("students.txt");
             AuthenticationManager auth = new AuthenticationManager();
-            AdminRole admin = new AdminRole(auth, sdb);
+            AdminRole admin = new AdminRole(auth);
             admin.addStudent(id, name, age, gender, department, gpa);
 
             JOptionPane.showMessageDialog(this, "Student Added Successfully!", "Success", JOptionPane.INFORMATION_MESSAGE);
             this.setVisible(false);
-            new ViewStudent().setVisible(true);
+            new Home().setVisible(true);
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Adding New Student Failed", "Error", JOptionPane.ERROR_MESSAGE);
 

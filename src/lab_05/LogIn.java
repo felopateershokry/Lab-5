@@ -18,6 +18,7 @@ public class LogIn extends javax.swing.JFrame {
     public LogIn() {
         initComponents();
         setTitle("Login Page");
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -130,9 +131,9 @@ public class LogIn extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        StudentDatabase sdb = new StudentDatabase("students.txt");
+//        StudentDatabase sdb = new StudentDatabase("students.txt");
         AuthenticationManager auth = new AuthenticationManager();
-        AdminRole admin = new AdminRole(auth, sdb);
+        AdminRole admin = new AdminRole(auth);
 
         String username = jTextField1.getText();
         String password = new String(jTextField2.getText());
