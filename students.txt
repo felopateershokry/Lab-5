@@ -1,18 +1,4 @@
-4,Ahmed Khaled,20,Male,CCE,3.7
-5,Mamdouh Yasser,21,Male,CS,3.4
-6,Ehab Mohamed,19,Male,IS,3.9
-4,Ahmed Khaled,20,Male,CCE,3.7
-5,Mamdouh Yasser,21,Male,CS,3.4
-6,Ehab Mohamed,19,Male,IS,3.9
-4,Ahmed Khaled,20,Male,CCE,3.7
-5,Mamdouh Yasser,21,Male,CS,3.4
-6,Ehab Mohamed,19,Male,IS,3.9
-4,Ahmed Khaled,20,Male,CCE,3.7
-5,Mamdouh Yasser,21,Male,CS,3.4
-6,Ehab Mohamed,19,Male,IS,3.9
-4,Ahmed Khaled,20,Male,CCE,3.7
-5,Mamdouh Yasser,21,Male,CS,3.4
-6,Ehab Mohamed,19,Male,IS,3.9
-4,Ahmed Khaled,20,Male,CCE,3.7
-5,Mamdouh Yasser,21,Male,CS,3.4
-6,Ehab Mohamed,19,Male,IS,3.9
+9276,na2eb,20,male,CCE,3.98
+9254,felo,50,Male,gg,2.0
+111,hfrio,306,Female,lll,2.6
+471,ggg,42,Female,kkk,3.0
